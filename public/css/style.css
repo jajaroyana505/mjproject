@@ -1,0 +1,56 @@
+.navbar{
+ 
+   background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.0));
+}
+.nav-link{
+   color: white;
+}
+.jumbotron{
+   height: 700px;
+   margin-top: -60px;
+   background-image: url(/img/hero.jpg);
+   background-size: cover;
+  
+}
+/* .up{
+   color: white;
+   
+   font-size:50;
+   height: 120px;
+   width: 120px;
+} */
+
+.material-symbols-outlined{
+   background-color: rgb(255, 221, 0);
+   margin: auto;
+   color: white;
+   font-size: 100px;
+   border-radius: 100%;
+   padding: 10px;
+   margin-top: -5rem;
+   margin-left: 45%;
+   position: absolute;
+   cursor: pointer;
+}
+
+
+
+
+#bg-1{
+   background-color: rgb(39, 39, 39);
+   color: white; 
+   padding-top: 10rem;
+}
+.keterangan h1{
+   font-size: 100px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.keterangan h1 span{
+   color: rgb(255, 221, 0);
+}
+.keterangan p{
+   
+   font-size: larger;
+   text-align: justify; 
+}
