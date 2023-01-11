@@ -10,7 +10,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
          <div class="navbar-nav">
             <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#">Pricing</a>
          </div>
       </div>
@@ -18,13 +18,39 @@
 </nav>
 <div class="jumbotron jumbotron-fluid">
    <div class="container">
+      <div class="row ">
+         <div class="col-md-7">
+            <div class="jumbotron-content">
+               <h1 class="display-1 fw-bolder"><span>I AM </span>WEB<br> PROGRAMER</h1>
+               <p>create your dream website with us</p>
+               <span class="material-symbols-outlined">
+                  keyboard_double_arrow_down
+               </span>
+            </div>
+         </div>
+      </div>
 
    </div>
 </div>
-<div class="z-1 ">
-   <span class="material-symbols-outlined">
-      keyboard_double_arrow_down
-   </span>
+<div id="about">
+   <div class="container">
+      <div class="row align-items-center">
+         <div class="col-md-5 foto">
+            <img src="/img/jajaroyana.jpg" alt="" width="350px">
+         </div>
+         <div class="col-md-7 p-5">
+            <h4>ABOUT US</h4>
+            <h1>Do some amazing things with me</h1>
+            <div class="sub-judul">
+               <div class="strip"></div>Web Programer & Desainer
+            </div>
+            <p>Saya adalah mahasiswa Fakultas Teknik Informatika Universitas Bina Sarana Informatika. Yang memiliki keahlian dibidang web programing yang menguasai beberapa bahasa pemograman dan scripting seperti PHP, Python, Javascript, HTML 5 dan CSS3</p>
+
+            <p>Saya juga memiliki keahlian dibidang desain grafis dan branding produk ataupun perusahaan. Software yang sering saya gunakan untuk membuat sebuah desain diantaranya CorelDraw 2020 dan Canva.</p>
+            <a href="" class="btn btn-warning">Download CV</a>
+         </div>
+      </div>
+   </div>
 </div>
 <div id="bg-1">
    <div class="container">
@@ -32,7 +58,7 @@
          <div class="col-md-6 ">
             <img src="/img/lp1.png" alt="" width="100%">
          </div>
-         <div class="col-md-6 keterangan">
+         <div class="col-md-6 keterangan p-5">
             <h1>Furniture<span>.com</span></h1>
             <p>Adalah laman web yang dirancang untuk memperkenalkan produk-produk toko pada pengunjung, dan mendorong mereka untuk melakukan tindakan seperti melihat katalog atau datang ke toko fisik.
             </p>
@@ -41,14 +67,18 @@
       </div>
    </div>
 </div>
-<div class="bg-color">
+<div id="bg-2">
    <div class="container">
       <div class="row">
-         <div class="col-6">
-            <h1>Hahanjnjsd</h1>
+         <div class="col-md-6 keterangan text-center p-5">
+            <h1><span>Daifuk</span>Yuu</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat molestiae suscipit aliquid quo laudantium totam voluptatibus eaque deserunt ratione veritatis!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis soluta ipsa, cum dolorem ex, explicabo error aperiam id iusto quo voluptatum sapiente quae assumenda et dignissimos. Cumque architecto aspernatur laborum.
+
+            </p>
          </div>
-         <div class="col-6">
-            <img src="/img/lp1.png" alt="" width="100%">
+         <div class="col-md-6">
+            <img src="/img/lp2.png" alt="" width="100%">
          </div>
       </div>
    </div>

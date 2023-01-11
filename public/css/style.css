@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Rammetto+One&family=Secular+One&display=swap');
+
+
+
 .navbar{
  
    background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.0));
@@ -12,45 +16,115 @@
    background-size: cover;
   
 }
-/* .up{
-   color: white;
-   
-   font-size:50;
-   height: 120px;
-   width: 120px;
-} */
 
-.material-symbols-outlined{
-   background-color: rgb(255, 221, 0);
-   margin: auto;
+.jumbotron-content{
    color: white;
-   font-size: 100px;
-   border-radius: 100%;
-   padding: 10px;
-   margin-top: -5rem;
-   margin-left: 45%;
-   position: absolute;
-   cursor: pointer;
+   margin-top: 10rem;
+   text-align: center;
+}
+
+.jumbotron-content span{
+   color: rgb(255, 234, 0);
+}
+.jumbotron-content p{
+   text-align: center;
+   font-size: 35px;
+   font-family: 'dancing script';
 }
 
 
 
+
+
+@keyframes mymove {
+   from   {transform: translatey(0px);}
+   to {transform: translatey(15px);}
+}
+
+span.material-symbols-outlined{
+   background-color: rgb(255, 221, 0);
+   color: white;
+   font-size: 80px;
+   font-weight: 900;
+   border-radius: 100%;
+   padding: 9px;
+   cursor: pointer;
+   animation: mymove 1s ease 1s infinite alternate
+}
+span.material-symbols-outlined:hover{
+   background-color: rgb(255, 255, 255);
+   color: rgb(255, 221, 0);
+}
+
+#about{
+   background-color: rgb(255, 255, 255);
+   /* color: white; */
+}
+
+#about .foto{
+   text-align: center;
+   padding: 10rem 0;
+}
+
+.foto img{
+   box-shadow: rgba(109, 109, 109, 0.384) -5px 5px 10px;
+   /* border: solid x rgb(255, 221, 0); */
+   /* box-shadow: rgba(255, 255, 255, 0.495) -10px 10px ; */
+}
+
+#about h4{
+   display: inline-block;
+   background-color:  rgb(255, 221, 0);
+   font-weight: 700;
+   box-shadow: rgba(109, 109, 109, 0.384) -2px 2px 5px;
+   padding: 5px 25px ;
+   margin-bottom: 3rem;
+}
+
+#about h1{
+   display: inline-block;
+   font-family: 'secular one';
+   font-size: 60px;
+   margin-bottom: 3rem;
+}
+.sub-judul{
+   font-family: 'secular one';
+   font-size: larger;
+   display: flex;
+   align-items: center;
+}
+.strip{
+   height: 5px;
+   width: 100px;
+   margin-right: 10px;
+   background-color: rgb(255, 221, 0);
+}
+.btn-warning{
+   border-radius: 20px;
+   margin-top: 2rem;
+}
 
 #bg-1{
    background-color: rgb(39, 39, 39);
    color: white; 
    padding-top: 10rem;
 }
+#bg-2{
+   background-color: rgb(66, 66, 66);
+   color: white;
+   padding-top: 5rem; 
+   
+}
 .keterangan h1{
-   font-size: 100px;
+   font-size: 90px;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
 }
 
 .keterangan h1 span{
    color: rgb(255, 221, 0);
 }
-.keterangan p{
+p{
    
-   font-size: larger;
    text-align: justify; 
 }
