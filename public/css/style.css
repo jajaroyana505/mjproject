@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Rammetto+One&family=Secular+One&display=swap');
 
-
+:root {
+   --second-color: rgb(255, 221, 0);
+ }
 
 .navbar{
  
@@ -12,8 +14,11 @@
 .jumbotron{
    height: 700px;
    margin-top: -60px;
-   background-image: url(/img/hero.jpg);
+   background-image: url(/img/hero4.png);
    background-size: cover;
+   background-repeat: no-repeat;
+   background-position-y: -3rem ;
+   /* background-position-x: 5rem ; */
   
 }
 
@@ -21,10 +26,11 @@
    color: white;
    margin-top: 10rem;
    text-align: center;
+   text-shadow: black 0px 2px 5px;
 }
 
 .jumbotron-content span{
-   color: rgb(255, 234, 0);
+   color: var(--second-color);
 }
 .jumbotron-content p{
    text-align: center;
@@ -35,14 +41,13 @@
 
 
 
-
 @keyframes mymove {
    from   {transform: translatey(0px);}
    to {transform: translatey(15px);}
 }
 
 span.material-symbols-outlined{
-   background-color: rgb(255, 221, 0);
+   background-color: var(--second-color);
    color: white;
    font-size: 80px;
    font-weight: 900;
@@ -53,7 +58,7 @@ span.material-symbols-outlined{
 }
 span.material-symbols-outlined:hover{
    background-color: rgb(255, 255, 255);
-   color: rgb(255, 221, 0);
+   color: var(--second-color);
 }
 
 #about{
@@ -72,19 +77,20 @@ span.material-symbols-outlined:hover{
    /* box-shadow: rgba(255, 255, 255, 0.495) -10px 10px ; */
 }
 
-#about h4{
-   display: inline-block;
-   background-color:  rgb(255, 221, 0);
-   font-weight: 700;
-   box-shadow: rgba(109, 109, 109, 0.384) -2px 2px 5px;
-   padding: 5px 25px ;
-   margin-bottom: 3rem;
-}
 
-#about h1{
+.tagline{
    display: inline-block;
    font-family: 'secular one';
    font-size: 60px;
+   margin-bottom: 3rem;
+}
+.judul{
+   display: inline-block;
+   background-color:  var(--second-color);
+   font-weight: 700;
+   color: rgb(39, 39, 39) ;
+   box-shadow: rgba(109, 109, 109, 0.384) -2px 2px 5px;
+   padding: 5px 25px ;
    margin-bottom: 3rem;
 }
 .sub-judul{
@@ -99,27 +105,51 @@ span.material-symbols-outlined:hover{
    margin-right: 10px;
    background-color: rgb(255, 221, 0);
 }
+.strip-2{
+   height: 3px;
+   width: 100%;
+   margin-right: 10px;
+   background-color: rgb(169, 169, 169);
+}
+.caption{
+   color: rgb(169, 169, 169);
+
+}
 .btn-warning{
+   background-color: var(--second-color);
    border-radius: 20px;
-   margin-top: 2rem;
 }
 
 #bg-1{
    background-color: rgb(39, 39, 39);
    color: white; 
-   padding-top: 10rem;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
 }
+
+
+
+.alur-kerja span{
+   text-align: center;
+   display: block;
+   /* font-family: 'secular one'; */
+   /* color: rgb(39, 39, 39); */
+   color: rgb(255, 221, 0);
+   font-size: 30px;
+}
+ 
+.alur-kerja img{
+   height: 100px;
+}
+
+
 #bg-2{
    background-color: rgb(66, 66, 66);
    color: white;
    padding-top: 5rem; 
    
 }
-.keterangan h1{
-   font-size: 90px;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   
-}
+
 
 .keterangan h1 span{
    color: rgb(255, 221, 0);
@@ -127,4 +157,10 @@ span.material-symbols-outlined:hover{
 p{
    
    text-align: justify; 
+}
+
+#footer{
+   height: 300px;
+   background-image: url(/img/bg-footer.png);
+   background-size: cover;
 }
