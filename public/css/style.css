@@ -2,6 +2,7 @@
 
 :root {
    --second-color: rgb(255, 221, 0);
+   --firs-color: rgb(20, 20, 20);
  }
 
 .navbar{
@@ -82,7 +83,6 @@ span.material-symbols-outlined:hover{
    display: inline-block;
    font-family: 'secular one';
    font-size: 60px;
-   margin-bottom: 3rem;
 }
 .judul{
    display: inline-block;
@@ -92,6 +92,7 @@ span.material-symbols-outlined:hover{
    box-shadow: rgba(109, 109, 109, 0.384) -2px 2px 5px;
    padding: 5px 25px ;
    margin-bottom: 3rem;
+   border-radius: 2px;
 }
 .sub-judul{
    font-family: 'secular one';
@@ -117,11 +118,13 @@ span.material-symbols-outlined:hover{
 }
 .btn-warning{
    background-color: var(--second-color);
-   border-radius: 20px;
+   border-radius: 10px;
+   font-weight: 500;
+   text-shadow: 0px 0px 3px white;
 }
 
 #bg-1{
-   background-color: rgb(39, 39, 39);
+   background-color: var(--firs-color);
    color: white; 
    padding-top: 5rem;
    padding-bottom: 5rem;
@@ -141,13 +144,26 @@ span.material-symbols-outlined:hover{
 .alur-kerja img{
    height: 100px;
 }
-
-
 #bg-2{
-   background-color: rgb(66, 66, 66);
+   height: 500px;
+}
+
+
+#bg-3{
+   background-color: var(--firs-color);
    color: white;
-   padding-top: 5rem; 
+   padding-top: 5rem;
+   padding-bottom: 5rem;
    
+}
+
+.sosial-media{
+   font-size: xx-large;
+}
+.sosial-media a {
+   text-decoration: none;
+   color: white;
+   margin-right: 10px;
 }
 
 
@@ -158,9 +174,15 @@ p{
    
    text-align: justify; 
 }
+.form{
+   background-color: rgb(35, 35, 35);
+   padding: 2rem;
+   /* border: solid var(--second-color) 2px  ; */
+   border-radius: 5px;
+}
 
 #footer{
-   height: 300px;
-   background-image: url(/img/bg-footer.png);
-   background-size: cover;
+   background-color: black;
+   color: rgb(194, 194, 194);
+   padding: 2rem;
 }

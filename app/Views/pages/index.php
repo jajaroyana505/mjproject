@@ -11,6 +11,8 @@
          <div class="navbar-nav">
             <a class="nav-link" href="#">Home</a>
             <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#bg-1">Portfolio</a>
+            <a class="nav-link" href="#bg-1">Gallery</a>
             <a class="nav-link" href="#">Pricing</a>
          </div>
       </div>
@@ -50,7 +52,7 @@
             <p>I am a student of the Faculty of Informatics Engineering, Bina Sarana Informatics University. Those who have expertise in the field of web programming who master several programming and scripting languages such as PHP, Python, Javascript, HTML 5 and CSS3.</p>
 
             <p>I also have expertise in graphic design and product or company branding. Software that I often use to create a design include CorelDraw 2020 and Canva..</p>
-            <a href="" class="btn btn-warning">Download CV</a>
+            <a href="" class="btn btn-warning"><i class="fa-solid fa-download"></i> Download CV</a>
          </div>
       </div>
    </div>
@@ -85,6 +87,8 @@
          <div class="col-md-6">
             <h4 class="judul">PORTFOLIO</h4>
             <h1 class="tagline">These are the projects I've developed</h1>
+            <div class="strip  mb-5"></div>
+
          </div>
          <div class="col-md-6 ">
             <!-- <div class="row mb-5 justify-content-center align-items-center">
@@ -111,44 +115,63 @@
                   </div>
                </div>
             </div>
-
-
-
          </div>
       </div>
    </div>
 </div>
 <div id="bg-2">
-   <div class="container">
-      <div class="row justify-content-center">
-         <div class="col-6">
-            <h4 class="judul">CONTACT US</h4>
-         </div>
-      </div>
-      <div class="row">
-         <div class="col-md-6 keterangan text-center p-5">
-            <h1><span>Daifuk</span>Yuu</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat molestiae suscipit aliquid quo laudantium totam voluptatibus eaque deserunt ratione veritatis!</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis soluta ipsa, cum dolorem ex, explicabo error aperiam id iusto quo voluptatum sapiente quae assumenda et dignissimos. Cumque architecto aspernatur laborum.
 
-            </p>
+</div>
+<div id="bg-3">
+   <div class="container">
+      <div class="row justify-content-between">
+         <div class="col-md-6 p-5">
+            <h1 class="tagline">Have Some Questions?</h1>
+            <div class="strip  mb-5"></div>
+            <p class="caption"> To be able to connect with our team, you can directly contact us via social media or by directly sending a message via the contact us form</p>
+            <div class="sosial-media">
+               <a href="">
+                  <i class="fa-brands fa-square-instagram"></i>
+               </a>
+               <a href="">
+                  <i class="fa-brands fa-square-github"></i>
+               </a>
+               <a href="">
+                  <i class="fa-brands fa-square-facebook"></i>
+               </a>
+            </div>
+
          </div>
          <div class="col-md-5">
-            <div class="mb-3">
-               <label for="exampleFormControlInput1" class="form-label">Email address</label>
-               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-               <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <h4 class="judul">CONTACT US</h4>
+            <div class="form">
+               <form action="/kirim" method="post">
+                  <div class="mb-3">
+                     <label for="name" class="form-label">Name</label>
+                     <input name="name" type="text" class="form-control" id="name" placeholder="your name">
+                  </div>
+                  <div class="mb-3">
+                     <label for="email" class="form-label">Email</label>
+                     <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                     <label for="message" class="form-label">Message</label>
+                     <textarea name="message" class="form-control" id="message" rows="3" placeholder="your message..."></textarea>
+                  </div>
+                  <div class="mt-3">
+                     <button type="submit" class="btn btn-warning">Send Message</button>
+                  </div>
+
+               </form>
             </div>
          </div>
+
       </div>
    </div>
 </div>
 
 <div id="footer">
-
+   <p class="text-center fs-5">copyright <i class="fa-regular fa-registered"></i> mjproject v1.1</p>
 </div>
 
 <?= $this->endSection(); ?>
