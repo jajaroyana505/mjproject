@@ -12,8 +12,9 @@
 .nav-link{
    color: white;
 }
+
 .jumbotron{
-   height: 700px;
+   height: 100vh;
    margin-top: -60px;
    background-image: url(/img/hero4.png);
    background-size: cover;
@@ -185,4 +186,33 @@ p{
    background-color: black;
    color: rgb(194, 194, 194);
    padding: 2rem;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+   .tagline{
+      font-size: 35px;
+   }
+
+   .strip{
+      display: none;
+   }
+
+   .navbar{
+      background: none;
+      background-color: rgb(29, 29, 29);
+   }
+
+   
+   #about .foto{
+      padding: 0 0;
+   }
+   .jumbotron{
+      margin: 0;
+   }
+   .jumbotron-content p{
+      font-size: 24px;
+      
+   }
 }
