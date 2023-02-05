@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\PesanModel;
+use CodeIgniter\Throttle\ThrottlerInterface;
 
 class Pages extends BaseController
 {
@@ -15,10 +16,9 @@ class Pages extends BaseController
    public function index()
    {
       $data = [
-         'judul' => 'MJ_Project',
-         'validation' => \Config\Services::validation()
+         'judul' => 'MJ Project',
       ];
-      return view('pages/index', $data);
+      return view('pages/index1', $data);
    }
    public function download()
    {
@@ -27,24 +27,31 @@ class Pages extends BaseController
    }
    public function kirim_pesan()
    {
-      $rules = [
-         'name'     => 'required',
-         'email'    => 'required|valid_email',
-         'mesasge' => 'required',
-      ];
-      $data = [
-         'nama' => $this->request->getVar('name'),
-         'email' => $this->request->getVar('email'),
-         'pesan' => $this->request->getVar('message'),
-      ];
+      $this->send_mail();
+      return redirect('/');
+   }
+   private function send_mail()
+   {
+      $email_tujuan = 'muhammadjajaroyana4@gmail.com';
+      $email_pengirim = $this->request->getVar('cf-email');
+      $nama_pengirim = $this->request->getVar('cf-name');
 
-      if (!$this->validateData($data, $rules)) {
-         $validation = \Config\Services::validation();
-         // dd($validation);
-         return redirect()->to('/pages')->withInput()->with('validation', $validation);
-      } else {
-         $this->modelPesan->save($data);
-         return redirect()->to('/pages');
-      }
+      $subject = 'Pengunjung web';
+      $pesan =  $this->request->getVar('cf-message');
+      $budgets =  $this->request->getVar('cf-budgets');
+
+      // memanggil servicce email
+      $email = service('email');
+
+      // set email tujuan
+      $email->setTo($email_tujuan);
+
+      // set email pengirim 
+      $email->setFrom($email_pengirim, $nama_pengirim);
+
+      // set subject email
+      $email->setSubject($subject);
+      $email->setMessage("Budgets  : $budgets, $pesan");
+      $email->send();
    }
 }

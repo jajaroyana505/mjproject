@@ -17,7 +17,7 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 
 // agar seperti routing ci3
-$routes->setAutoRoute(true);
+// $routes->setAutoRoute(true);
 
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
 // where controller filters or CSRF protection are bypassed.
@@ -33,7 +33,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Pages::index');
 $routes->post('/kirim', 'Pages::kirim_pesan');
 $routes->get('/download', 'Pages::download');
 

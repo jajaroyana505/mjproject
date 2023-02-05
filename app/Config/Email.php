@@ -6,9 +6,9 @@ use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig
 {
-    public string $fromEmail;
-    public string $fromName;
-    public string $recipients;
+    public string $fromEmail  = '';
+    public string $fromName   = '';
+    public string $recipients = '';
 
     /**
      * The "user agent"
@@ -18,7 +18,7 @@ class Email extends BaseConfig
     /**
      * The mail sending protocol: mail, sendmail, smtp
      */
-    public string $protocol = 'mail';
+    public string $protocol = 'smtp';
 
     /**
      * The server path to Sendmail.
@@ -26,24 +26,24 @@ class Email extends BaseConfig
     public string $mailPath = '/usr/sbin/sendmail';
 
     /**
-     * SMTP Server Address
+     * SMTP Server Address (di ganti)
      */
-    public string $SMTPHost;
+    public string $SMTPHost = 'smtp.googlemail.com';
 
     /**
-     * SMTP Username
+     * SMTP Username (di isi)
      */
-    public string $SMTPUser;
+    public string $SMTPUser = 'jajaroyana14@gmail.com';
 
     /**
-     * SMTP Password
+     * SMTP Password (di isi)
      */
-    public string $SMTPPass;
+    public string $SMTPPass = 'gwcntluxwxtidlws';
 
     /**
-     * SMTP Port
+     * SMTP Port (di ganti jadi 465)
      */
-    public int $SMTPPort = 25;
+    public int $SMTPPort = 465;
 
     /**
      * SMTP Timeout (in seconds)
@@ -58,7 +58,7 @@ class Email extends BaseConfig
     /**
      * SMTP Encryption. Either tls or ssl
      */
-    public string $SMTPCrypto = 'tls';
+    public string $SMTPCrypto = 'ssl';
 
     /**
      * Enable word-wrap
@@ -73,7 +73,7 @@ class Email extends BaseConfig
     /**
      * Type of mail, either 'text' or 'html'
      */
-    public string $mailType = 'text';
+    public string $mailType = 'html';
 
     /**
      * Character set (utf-8, iso-8859-1, etc.)
@@ -88,7 +88,7 @@ class Email extends BaseConfig
     /**
      * Email Priority. 1 = highest. 5 = lowest. 3 = normal
      */
-    public int $priority = 3;
+    public int $priority = 1;
 
     /**
      * Newline character. (Use “\r\n” to comply with RFC 822)
